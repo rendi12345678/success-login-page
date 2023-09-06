@@ -1,0 +1,80 @@
+/* CSS */
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: arial, Sans-Serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+  height: 100svh;
+  width: 100svw;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  width: 30rem;
+  height: 50rem;
+  grid-template-rows: 1.5fr 2fr;
+  box-shadow: 1px 1px 5px rgba(0,0,0,.25);
+}
+
+.icon {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 16rem;
+}
+
+.icon.success {
+  background-color: green;
+}
+
+.icon.error {
+  background-color: #e74343;
+}
+
+.wrapper {
+  padding: 2.5rem;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  row-gap: 3rem;
+}
+
+.wrapper .messages h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 4.8rem;
+}
+
+.wrapper .messages p {
+  font-size: 1.6rem;
+}
+
+.wrapper button {
+  border: 0;
+  padding: 1rem 3rem;
+  font-size: 2.4rem;
+  color: #fff;
+  border-radius: 1.5rem;
+}
+
+button.continue-btn {
+  background-color: green;
+}
+
+button.retry-btn {
+  background-color: #e74343;
+}
